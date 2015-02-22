@@ -99,5 +99,6 @@ setnames(allDataMELT, c('subjectID', 'activity', 'avgVal', 'varName'))
 setcolorder(allDataMELT, c('subjectID', 'activity', 'varName', 'avgVal'))
 allDataTidy <- dcast.data.table(allDataMELT, subjectID + activity ~ varName)
 
-
+## Write the tidy data to a file.
+write.table(x = allDataTidy,file = 'tidyData.txt', row.name = FALSE)
 
