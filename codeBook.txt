@@ -1,0 +1,9 @@
+# GetCleanDatProject
+Class project for Getting and Cleaning Data
+Code book.
+
+The description of the original data are found in the features_info.txt and SourceDataREADME.txt in this repo.
+
+Only features associated with calculated means and standard deviations are used in this analysis.
+
+Those features are summarised by mean() per subject and activity.
